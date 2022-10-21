@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import ReducerCount from './Component/ReducerCount/ReducerCount';
+import PatientManagement from './Component/PatientManagement/PatientManagement';
+import Shop from './Components/Shop/Shop';
+import Cart from './Components/Cart/Cart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{textAlign:'center',background:'#3D5B59',color:'#fff'}}>
+        <Cart></Cart>
+        <Shop></Shop>
+        
+      </div>
+
+
+
+    {/* ================================================================= */}
+
+    {/* <div style={{textAlign:'center',background:'#3D5B59',color:'#fff'}}>
+      <h1>Home Page</h1>
+      <ReducerCount></ReducerCount>
+      <PatientManagement></PatientManagement>
+    </div> */}
+    </>
   );
 }
 
